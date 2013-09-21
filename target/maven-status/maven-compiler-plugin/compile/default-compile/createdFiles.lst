@@ -1,0 +1,10 @@
+com/aaronstechcenter/kshorts1/dao/KShortsDao.class
+com/aaronstechcenter/kshorts1/dao/MongoDBDao.class
+com/aaronstechcenter/kshorts1/dao/UserDao.class
+com/aaronstechcenter/kshorts1/service/UserSvc.class
+com/aaronstechcenter/kshorts1/service/impl/UserSvcImpl.class
+com/aaronstechcenter/kshorts1/service/ServiceConstants.class
+com/aaronstechcenter/kshorts1/service/ServiceLocator.class
+com/aaronstechcenter/kshorts1/userws/UserWS.class
+com/aaronstechcenter/kshorts1/data/User.class
+com/aaronstechcenter/kshorts1/service/ServiceUtil.class
