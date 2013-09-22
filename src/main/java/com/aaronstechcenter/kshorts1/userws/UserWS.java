@@ -5,6 +5,7 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 
 import com.aaronstechcenter.kshorts1.data.User;
+import com.aaronstechcenter.kshorts1.data.UserRequest;
 import com.aaronstechcenter.kshorts1.service.UserSvc;
 import com.aaronstechcenter.kshorts1.service.ServiceLocator;
 //import javax.xml.soap.SOAPException;
@@ -31,19 +32,36 @@ public class UserWS {
         
         return user;
     }
-        
+
+    /**
+     * Web service operation
+     */
     @WebMethod(operationName = "registerUser")
-    public Integer createNewUser(@WebParam(name="user") User user_) throws Exception {
+    public String registerUser(@WebParam(name = "email") String email_, 
+        @WebParam(name = "firstName") String firstName_, 
+        @WebParam(name = "lastName") String lastName_, 
+        @WebParam(name = "password") String password_, 
+        @WebParam(name = "url") String url_) {
+        
+        String returnVal = "User successfully added.";
+
         ServiceLocator locator = new ServiceLocator();
         UserSvc userSvc = locator.getUserService(null);
-        Integer returnVal = 0;
+        
+        User user = new User();
+        user.setEmail(email_);
+        user.setFirstName(firstName_);
+        user.setLastName(lastName_);
+        user.setPassword(password_);
+        user.setUrl(url_);
         
         try {
-            returnVal = userSvc.createNewUser(user_);
+            Integer errorCode = userSvc.createNewUser(user);
         } catch (Exception ex) {
-            throw ex;
+            returnVal = ex.toString();
         }
         
         return returnVal;
     }
+        
 }

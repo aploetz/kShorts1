@@ -22,9 +22,11 @@ public class UserSvcImpl implements UserSvc {
     }
     
     public UserSvcImpl(ArrayList<KShortsDao> daoList) {
-        for (KShortsDao dao : daoList) {
-            if (dao instanceof UserDao) {
-                uDao = (UserDao) dao;
+        if (daoList != null) {
+            for (KShortsDao dao : daoList) {
+                if (dao instanceof UserDao) {
+                    uDao = (UserDao) dao;
+                }
             }
         }
         
