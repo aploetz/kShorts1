@@ -1,6 +1,7 @@
 /home/aploetz/NetBeansProjects/kShorts1/src/main/java/com/aaronstechcenter/kshorts1/dao/UserDao.java
 /home/aploetz/NetBeansProjects/kShorts1/src/main/java/com/aaronstechcenter/kshorts1/service/UserSvc.java
 /home/aploetz/NetBeansProjects/kShorts1/src/main/java/com/aaronstechcenter/kshorts1/service/ServiceLocator.java
+/home/aploetz/NetBeansProjects/kShorts1/src/main/java/com/aaronstechcenter/kshorts1/data/UserRequest.java
 /home/aploetz/NetBeansProjects/kShorts1/src/main/java/com/aaronstechcenter/kshorts1/userws/UserWS.java
 /home/aploetz/NetBeansProjects/kShorts1/src/main/java/com/aaronstechcenter/kshorts1/service/ServiceUtil.java
 /home/aploetz/NetBeansProjects/kShorts1/src/main/java/com/aaronstechcenter/kshorts1/dao/KShortsDao.java

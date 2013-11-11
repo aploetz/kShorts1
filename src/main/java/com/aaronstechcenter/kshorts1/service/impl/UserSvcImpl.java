@@ -41,7 +41,8 @@ public class UserSvcImpl implements UserSvc {
 
         if (user != null) {
             if (!password_.equals(user.getPassword())) {
-                SOAPException ex = new SOAPException("Invalid password");
+                SOAPException ex = new SOAPException("Invalid password!  " + password_ +
+                        " != " + user.getPassword());
                 throw ex;
             }
         } else {

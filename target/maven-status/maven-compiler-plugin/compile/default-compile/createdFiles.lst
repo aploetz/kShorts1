@@ -7,4 +7,5 @@ com/aaronstechcenter/kshorts1/service/ServiceConstants.class
 com/aaronstechcenter/kshorts1/service/ServiceLocator.class
 com/aaronstechcenter/kshorts1/userws/UserWS.class
 com/aaronstechcenter/kshorts1/data/User.class
+com/aaronstechcenter/kshorts1/data/UserRequest.class
 com/aaronstechcenter/kshorts1/service/ServiceUtil.class
