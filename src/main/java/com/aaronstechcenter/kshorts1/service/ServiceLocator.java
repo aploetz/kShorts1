@@ -8,7 +8,9 @@ import java.util.ArrayList;
 
 import com.aaronstechcenter.kshorts1.dao.KShortsDao;
 import com.aaronstechcenter.kshorts1.service.UserSvc;
+import com.aaronstechcenter.kshorts1.service.StorySvc;
 import com.aaronstechcenter.kshorts1.service.impl.UserSvcImpl;
+import com.aaronstechcenter.kshorts1.service.impl.StorySvcImpl;
 
 /**
  *
@@ -20,5 +22,9 @@ public class ServiceLocator {
 
     public UserSvc getUserService(ArrayList<KShortsDao> daos_) {
         return new UserSvcImpl(daos_);
+    }
+    
+    public StorySvc getStoryService(ArrayList<KShortsDao> daos_) {
+        return new StorySvcImpl(daos_);
     }
 }

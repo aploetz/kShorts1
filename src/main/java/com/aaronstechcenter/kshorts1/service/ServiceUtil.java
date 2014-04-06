@@ -16,4 +16,11 @@ public class ServiceUtil {
         DateTime dateTime = new DateTime();
         return dateTime.toString(ServiceConstants.TIMESTAMP);
     }
+    
+    public static String getNowFormatted() {
+        String returnVal = "";
+        
+        
+        return returnVal;
+    }
 }

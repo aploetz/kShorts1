@@ -5,10 +5,8 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 
 import com.aaronstechcenter.kshorts1.data.User;
-//import com.aaronstechcenter.kshorts1.data.UserRequest;
 import com.aaronstechcenter.kshorts1.service.UserSvc;
 import com.aaronstechcenter.kshorts1.service.ServiceLocator;
-//import javax.xml.soap.SOAPException;
 
 /**
  *

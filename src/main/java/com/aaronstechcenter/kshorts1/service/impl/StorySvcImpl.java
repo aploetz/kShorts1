@@ -8,6 +8,8 @@ import com.aaronstechcenter.kshorts1.dao.KShortsDao;
 import com.aaronstechcenter.kshorts1.dao.StoryDao;
 import com.aaronstechcenter.kshorts1.data.Story;
 import com.aaronstechcenter.kshorts1.service.StorySvc;
+import com.aaronstechcenter.kshorts1.service.ServiceUtil;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,8 +41,13 @@ public class StorySvcImpl implements StorySvc {
     @Override
     public Integer insertStory(Story story_) throws Exception {
         Integer returnVal = 0;
-        Long storyID = generateStoryID();
         
+        //generate default values
+        story_.setStoryID(generateStoryID());
+        story_.setUploadDate(getNowFormatted());
+        
+        //save story
+        returnVal = sDao.insertStory(story_);
         
         return returnVal;
     }
